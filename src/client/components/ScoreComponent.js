@@ -17,7 +17,7 @@ const ScoreComponent = (props) => {
       <br />
       <br />
       { gameOver && (
-        <button type="button" onClick={restartGame}>Play Again!</button>
+        <button type="button" onClick={restartGame}>Play Again!!</button>
       )}
     </div>
   );
