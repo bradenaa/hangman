@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main_container {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: blue;  /* fallback for old browsers */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  //* ------- Declaring Main Grid
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  grid-template-rows: auto auto;
+  grid-row-gap: 0px; 
+  grid-template-areas:
+  'HangmanComponent HangmanComponent HangmanComponent ScoreComponent ScoreComponent'
+  'LettersComponent LettersComponent LettersComponent LettersComponent LettersComponent';
+}
+
+.hangman_component {
+  grid-area: HangmanComponent;
+  background: rgb(59, 76, 78);
+  text-align: center;
+  font-size: 75px;
+}
+
+.letters_component {
+  grid-area: LettersComponent;
+  background: green;
+}
+
+.score_component {
+  grid-area: ScoreComponent;
+  background: grey;
+}
+
+.letter_button {
+  font-size: 25px;
+  margin: 10px;
+  height: 40px;
+  width: 40px;
+}
